@@ -1,0 +1,89 @@
+======================================================================
+ SCENARIO 2: RPG GAME CHARACTER - DEMONSTRATION
+======================================================================
+
+[STEP 1] Creating Weapons...
+
+[STEP 2] Creating Characters...
+
+[STEP 3] Initial Character Status:
+
+--- ARTHUR ---
+  Class: Warrior
+  Level: 10
+  Health Points: 1500/1500
+    Weapon: Sword (Type: Melee, Damage: 25, Ability: Slash Attack)
+
+--- MERLIN ---
+  Class: Mage
+  Level: 12
+  Health Points: 800/800
+    Weapon: Staff (Type: Magic, Damage: 20, Ability: Spell Cast)
+
+--- ELARA ---
+  Class: healer
+  Level: 9
+  Health Points: 1000/1000
+    Weapon: Healing Staff (Type: Magic, Damage: 15, Ability: Healing)
+  Healing Power: 48
+
+[STEP 4] Testing attack() Method:
+
+--- Warrior's Turn ---
+Arthur (Warrior) attacks Merlin with Sword!
+    Raw Attack damage 15
+    Merlin's Defense 5 (Reduce damage by 5)
+    Actual Damage Taken: 15
+    Merlin's HP: 780/800
+
+--- Mage's Turn ---
+Merlin (Mage) attacks Arthur with Staff!
+    Raw Attack damage 5
+    Arthur's Defense 10 (Reduce damage by 10)
+    Actual Damage Taken: 5
+    Arthur's HP: 1485/1500
+
+[STEP 5] Status After Exchanges:
+
+--- ARTHUR ---
+  Class: Warrior
+  Level: 10
+  Health Points: 1485/1500
+    Weapon: Sword (Type: Melee, Damage: 25, Ability: Slash Attack)
+
+--- MERLIN ---
+  Class: Mage
+  Level: 12
+  Health Points: 780/800
+    Weapon: Staff (Type: Magic, Damage: 20, Ability: Spell Cast)
+
+[STEP 6] Testing levelUp() Method:
+
+--- Arthur levels up! ---
+
+Arthur leveled up to Level 11!
+   Max health increased to 1510 (full heal applied)
+
+--- Merlin levels up! ---
+
+Merlin leveled up to Level 13!
+   Max health increased to 810 (full heal applied)
+
+[STEP 7] Testing Healer Special Abilities:
+
+--- Healer heals themselves ---
+
+--- ELARA ---
+  Class: healer
+  Level: 9
+  Health Points: 1000/1000
+    Weapon: Healing Staff (Type: Magic, Damage: 15, Ability: Healing)
+  Healing Power: 48
+Elara (Healer) cast a healing spell!
+   Healing Amount: 48 (Base: 48 + Level Bonus: 18)
+   Restored 48 HP! Current HP: 1000/1000
+
+--- Healer heals the Warrior ---
+Elara (Healer) casts healing spell on Arthur!
+   Healing Amount: 48
+   Restored 48 HP to Arthur! Their HP: 1510

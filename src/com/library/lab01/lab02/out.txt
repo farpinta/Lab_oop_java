@@ -1,0 +1,44 @@
+============================================================
+ LIBRARY MANAGEMENT SYSTEM - DEMONSTRATION
+============================================================
+
+--- Initial Book Information ---
+Book[Title='Java Programming', Status='Available', UUID='cf248178-fe4a-4715-91ca-926a0359c613']
+Book[Title='OOP Concept', Status='Borrowed', UUID='47e3f30a-be97-48f1-a5bd-90daf11cec99']
+Book[Title='Java Programming', Status='Available', UUID='d29c38ac-3a85-4a92-ad78-2b9b510415fe']
+Book[Title='OOP Concept', Status='Borrowed', UUID='bff850a3-265a-4ffc-abee-50ab4215d5c6']
+Book[Title='Java Programming', Status='Available', UUID='5891198c-cb95-4794-a665-e9b640fef4a7']
+Book[Title='OOP Concept', Status='Borrowed', UUID='08074bc6-11a2-4879-b2d0-144d2d3e4d34']
+
+--- Testing checkOut() Method ---
+
+Attempting to checkout Book 1 and Book 2 (Available):
+
+   Book "Java Programming" has been checked out successfully.
+   Book Java Programming (cf248178-fe4a-4715-91ca-926a0359c613) has been borrowed by Somsak
+   Return Due Date: 2026-2-4
+ Error: Book "OOP Concept" is already borrowed and cannot be checked out again.
+
+Attempting to checkout Book 2 again (Already Borrowed):
+ Error: Book "OOP Concept" is already borrowed and cannot be checked out again.
+
+--- Testing returnBook() Method ---
+
+Returning Book 1:
+   Book "Java Programming" has been returned successfully.
+
+--- Challenging Scenario: Borrowing Limit ---
+
+   Book "Java Programming" has been checked out successfully.
+   Book Java Programming (d29c38ac-3a85-4a92-ad78-2b9b510415fe) has been borrowed by Somsak
+   Return Due Date: 2026-2-4
+ Borrow request denied for member Somsak
+ Borrow request denied for member Somsak
+
+--- Final Book Information ---
+Book[Title='Java Programming', Status='Available', UUID='cf248178-fe4a-4715-91ca-926a0359c613']
+Book[Title='OOP Concept', Status='Borrowed', UUID='47e3f30a-be97-48f1-a5bd-90daf11cec99']
+Book[Title='Java Programming', Status='Borrowed', UUID='d29c38ac-3a85-4a92-ad78-2b9b510415fe']
+Book[Title='OOP Concept', Status='Borrowed', UUID='bff850a3-265a-4ffc-abee-50ab4215d5c6']
+Book[Title='Java Programming', Status='Available', UUID='5891198c-cb95-4794-a665-e9b640fef4a7']
+Book[Title='OOP Concept', Status='Borrowed', UUID='08074bc6-11a2-4879-b2d0-144d2d3e4d34']
